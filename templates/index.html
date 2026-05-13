@@ -1,0 +1,695 @@
+{% extends "base.html" %}
+{% block body %}
+<main class="main">
+    <!-- Hero Section -->
+<section id="hero" class="hero section light-background">
+
+  <img src="/static/img/hero-bg.jpg" alt="" data-aos="fade-in">
+
+  <div class="container position-relative">
+
+    <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
+      <h2>ASTHMA CLASSIFICATION SYSTEM</h2>
+      <p>AI-powered system for predicting and classifying asthma severity using machine learning techniques</p>
+    </div><!-- End Welcome -->
+
+    <div class="content row gy-4">
+      <div class="col-lg-4 d-flex align-items-stretch">
+        <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
+          <h3>Why This Project?</h3>
+          <p>
+            Asthma is a chronic respiratory disease that affects millions of people worldwide. Early detection and accurate classification can help in better treatment and management. 
+            This project uses machine learning algorithms to analyze patient data and predict asthma severity, helping healthcare professionals make faster and more reliable decisions.
+          </p>
+          <div class="text-center">
+            <a href="#about" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
+          </div>
+        </div>
+      </div><!-- End Why Box -->
+
+      <div class="col-lg-8 d-flex align-items-stretch">
+        <div class="d-flex flex-column justify-content-center">
+          <div class="row gy-4">
+
+            <div class="col-xl-4 d-flex align-items-stretch">
+              <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
+                <i class="bi bi-clipboard-data"></i>
+                <h4>Data Analysis</h4>
+                <p>Analyzing patient health data such as symptoms, medical history, and environmental factors</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="col-xl-4 d-flex align-items-stretch">
+              <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
+                <i class="bi bi-gem"></i>
+                <h4>Machine Learning Models</h4>
+                <p>Using algorithms like Logistic Regression, Decision Tree, Random Forest, SVM, and KNN</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="col-xl-4 d-flex align-items-stretch">
+              <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
+                <i class="bi bi-inboxes"></i>
+                <h4>Accurate Prediction</h4>
+                <p>Provides reliable classification of asthma levels to support early diagnosis and treatment</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+          </div>
+        </div>
+      </div>
+    </div><!-- End  Content-->
+
+  </div>
+
+</section><!-- /Hero Section -->
+
+<!-- About Section -->
+<section id="about" class="about section">
+
+  <div class="container">
+
+    <div class="row gy-4 gx-5">
+
+      <!-- Left Content (Replaced Image with Text Content) -->
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+        <h3>Project Overview</h3>
+        <p>
+          Asthma is a chronic respiratory condition that requires timely diagnosis and proper classification 
+          to ensure effective treatment. This project focuses on using machine learning techniques to classify 
+          asthma severity based on patient health data.
+        </p>
+
+        <ul>
+          <li>
+            <i class="fa-solid fa-database"></i>
+            <div>
+              <h5>Dataset Information</h5>
+              <p>Includes patient attributes such as symptoms, environmental factors, and medical history</p>
+            </div>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-gears"></i>
+            <div>
+              <h5>Data Processing</h5>
+              <p>Data is cleaned, encoded, and normalized to ensure better performance of machine learning models</p>
+            </div>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-brain"></i>
+            <div>
+              <h5>Intelligent Prediction</h5>
+              <p>System predicts asthma severity levels using trained classification algorithms</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right Content (Existing Content Improved) -->
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+        <h3>About the Project</h3>
+        <p>
+          The Asthma Classification Project is a machine learning-based system designed to predict and classify asthma severity levels using patient data. 
+          The system processes multiple health-related parameters and applies predictive models to assist in medical decision-making.
+        </p>
+        <ul>
+          <li>
+            <i class="fa-solid fa-vial-circle-check"></i>
+            <div>
+              <h5>Data Collection & Preprocessing</h5>
+              <p>Collected dataset is cleaned, normalized, and prepared for model training to improve accuracy</p>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-pump-medical"></i>
+            <div>
+              <h5>Model Building</h5>
+              <p>Multiple machine learning algorithms are trained and compared to find the best-performing model</p>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-heart-circle-xmark"></i>
+            <div>
+              <h5>Prediction & Evaluation</h5>
+              <p>The system predicts asthma severity and evaluates performance using accuracy and other metrics</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+    <!-- Stats Section -->
+<section id="stats" class="stats section light-background">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="fa-solid fa-user-doctor"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Patient Records</p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="fa-regular fa-hospital"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+          <p>ML Algorithms Used</p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="fas fa-flask"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="90" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Model Accuracy (%)</p>
+        </div>
+      </div><!-- End Stats Item -->
+
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="fas fa-award"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Features Analyzed</p>
+        </div>
+      </div><!-- End Stats Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Stats Section -->
+
+<!-- Services Section -->
+<section id="services" class="services section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Project Features</h2>
+    <p>Key functionalities of the Asthma Classification System using machine learning</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- 1 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="fas fa-heartbeat"></i></div>
+          <h3>Asthma Severity Prediction</h3>
+          <p>Predicts asthma severity levels using patient symptoms and ML models.</p>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="fas fa-pills"></i></div>
+          <h3>Data Preprocessing</h3>
+          <p>Cleans, encodes, and normalizes data for better model performance.</p>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="fas fa-brain"></i></div>
+          <h3>Machine Learning Models</h3>
+          <p>Uses Logistic Regression, Decision Tree, Random Forest, SVM, and KNN.</p>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Model Evaluation</h3>
+          <p>Measures accuracy, precision, recall, and confusion matrix.</p>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="fas fa-database"></i></div>
+          <h3>Dataset Analysis</h3>
+          <p>Analyzes patient data to identify asthma-related patterns.</p>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="fas fa-laptop-medical"></i></div>
+          <h3>User Interface</h3>
+          <p>Simple interface to input patient data and get predictions.</p>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="fas fa-hospital-user"></i></div>
+          <h3>Patient Data Input</h3>
+          <p>Enter symptoms, age, and medical history for prediction.</p>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="fas fa-dna"></i></div>
+          <h3>Feature Selection</h3>
+          <p>Selects important health parameters affecting asthma.</p>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="900">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="fas fa-wheelchair"></i></div>
+          <h3>Severity Classification</h3>
+          <p>Classifies asthma into mild, moderate, and severe levels.</p>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="1000">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="fas fa-notes-medical"></i></div>
+          <h3>Result Interpretation</h3>
+          <p>Displays prediction results clearly for better understanding.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section><!-- /Services Section -->
+    <!-- Prediction CTA Section -->
+<div id="prediction" class="container-fluid bg-primary bg-icon mt-5 py-6">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+
+      <!-- Text -->
+      <div class="col-md-7 wow fadeIn" data-wow-delay="0.1s">
+        <h1 class="display-5 text-white mb-3">
+          Predict Asthma Severity Instantly 🫁
+        </h1>
+        <p class="text-white mb-0">
+          Enter patient health details such as age, BMI, smoking habits, and symptoms 
+          to get an accurate asthma severity prediction using our machine learning model.
+        </p>
+      </div>
+
+      <!-- Button -->
+      <div class="col-md-5 text-md-end wow fadeIn" data-wow-delay="0.5s">
+        <a class="btn btn-lg btn-secondary py-3 px-5" href="/predict">
+          Predict Now
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- End CTA -->
+    <!-- Methodology Section -->
+<section id="departments" class="departments section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Project Methodology</h2>
+    <p>Step-by-step process followed in building the Asthma Classification System</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row">
+      <div class="col-lg-3">
+        <ul class="nav nav-tabs flex-column">
+
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-1">Data Collection</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2">Data Preprocessing</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Feature Selection</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">Model Training</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">Evaluation & Prediction</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="col-lg-9 mt-4 mt-lg-0">
+        <div class="tab-content">
+
+          <!-- Step 1 -->
+          <div class="tab-pane active show" id="departments-tab-1">
+            <div class="row">
+              <div class="col-lg-12 details">
+                <h3>Data Collection</h3>
+                <p class="fst-italic">Gathering relevant patient data for analysis</p>
+                <p>
+                  The dataset includes patient information such as age, symptoms, smoking habits, allergies, 
+                  and breathing difficulties. This data is essential for training machine learning models.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="tab-pane" id="departments-tab-2">
+            <div class="row">
+              <div class="col-lg-12 details">
+                <h3>Data Preprocessing</h3>
+                <p class="fst-italic">Cleaning and preparing data for better performance</p>
+                <p>
+                  Missing values are handled, categorical variables are encoded, and data is normalized 
+                  to improve the efficiency and accuracy of the model.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="tab-pane" id="departments-tab-3">
+            <div class="row">
+              <div class="col-lg-12 details">
+                <h3>Feature Selection</h3>
+                <p class="fst-italic">Selecting important features for prediction</p>
+                <p>
+                  Important health parameters are identified to reduce complexity and improve model performance.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="tab-pane" id="departments-tab-4">
+            <div class="row">
+              <div class="col-lg-12 details">
+                <h3>Model Training</h3>
+                <p class="fst-italic">Training machine learning algorithms</p>
+                <p>
+                  Multiple models such as Logistic Regression, Decision Tree, Random Forest, SVM, and KNN 
+                  are trained and compared to select the best-performing model.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="tab-pane" id="departments-tab-5">
+            <div class="row">
+              <div class="col-lg-12 details">
+                <h3>Evaluation & Prediction</h3>
+                <p class="fst-italic">Testing and generating predictions</p>
+                <p>
+                  The model is evaluated using accuracy and other metrics. Once validated, it is used to 
+                  predict asthma severity based on new patient input.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /Methodology Section -->
+
+   <!-- Models Section -->
+<section id="doctors" class="doctors section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Machine Learning Models</h2>
+    <p>Algorithms used for asthma classification and prediction</p>
+  </div>
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Model 1 -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-member d-flex align-items-start">
+          <div class="member-info">
+            <h4>Logistic Regression</h4>
+            <span>Classification Algorithm</span>
+            <p>Used for binary classification to predict asthma severity based on input features.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Model 2 -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="team-member d-flex align-items-start">
+          <div class="member-info">
+            <h4>Decision Tree</h4>
+            <span>Tree-Based Model</span>
+            <p>Splits data into branches to make decisions based on feature importance.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Model 3 -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="team-member d-flex align-items-start">
+          <div class="member-info">
+            <h4>Random Forest</h4>
+            <span>Ensemble Method</span>
+            <p>Combines multiple decision trees to improve prediction accuracy and reduce overfitting.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Model 4 -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member d-flex align-items-start">
+          <div class="member-info">
+            <h4>Support Vector Machine (SVM)</h4>
+            <span>Supervised Learning</span>
+            <p>Finds the optimal boundary to classify asthma severity levels effectively.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Model 5 -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="team-member d-flex align-items-start">
+          <div class="member-info">
+            <h4>K-Nearest Neighbors (KNN)</h4>
+            <span>Instance-Based Learning</span>
+            <p>Classifies patients based on similarity with nearest data points.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section><!-- /Models Section -->
+
+
+<!-- FAQ Section -->
+<section id="faq" class="faq section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Project FAQs</h2>
+    <p>Common questions about the Asthma Classification System</p>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="faq-container">
+
+          <!-- Q1 -->
+          <div class="faq-item faq-active">
+            <h3>What is the purpose of this project?</h3>
+            <div class="faq-content">
+              <p>This project predicts asthma severity using machine learning based on patient health data.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div>
+
+          <!-- Q2 -->
+          <div class="faq-item">
+            <h3>What type of data is used?</h3>
+            <div class="faq-content">
+              <p>The system uses patient data such as age, symptoms, smoking habits, allergies, and breathing conditions.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div>
+
+          <!-- Q3 -->
+          <div class="faq-item">
+            <h3>Which algorithms are used?</h3>
+            <div class="faq-content">
+              <p>Algorithms include Logistic Regression, Decision Tree, Random Forest, SVM, and KNN.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div>
+
+          <!-- Q4 -->
+          <div class="faq-item">
+            <h3>How accurate is the model?</h3>
+            <div class="faq-content">
+              <p>The model achieves high accuracy depending on dataset quality and preprocessing techniques.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div>
+
+          <!-- Q5 -->
+          <div class="faq-item">
+            <h3>Can this system be used in real hospitals?</h3>
+            <div class="faq-content">
+              <p>It is a prototype system that can assist healthcare professionals but requires validation before real-world use.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section><!-- /FAQ Section -->
+
+  </div>
+
+</div>
+
+</section><!-- /Contact Section -->
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+
+      <!-- About -->
+      <div class="col-lg-4 col-md-6 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span class="sitename">AsthmaCare AI</span>
+        </a>
+        <div class="footer-contact pt-3">
+          <p>India</p>
+          <p class="mt-3"><strong>Phone:</strong> <span>+91 1234567890</span></p>
+          <p><strong>Email:</strong> <span>asthma.project.ai@gmail.com</span></p>
+        </div>
+        <div class="social-links d-flex mt-4">
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <!-- Useful Links -->
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Project</a></li>
+          <li><a href="#services">Features</a></li>
+          <li><a href="#prediction">Predict Here</a></li>
+          <li><a href="#departments">Methodology</a></li>
+          <li>{% if session.get('user_id') %}
+              <a href="/logout" class="nav-item nav-link">Logout</a>
+              {% else %}
+              <a href="/login" class="nav-item nav-link">Login</a> 
+              {% endif %} 
+          </li>
+        </ul>
+      </div>
+
+      <!-- Project Features -->
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Project Features</h4>
+        <ul>
+          <li><a href="#">Prediction System</a></li>
+          <li><a href="#">Data Analysis</a></li>
+          <li><a href="#">ML Models</a></li>
+          <li><a href="#">Model Evaluation</a></li>
+          <li><a href="#">User Interface</a></li>
+        </ul>
+      </div>
+
+      <!-- Technologies -->
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Technologies</h4>
+        <ul>
+          <li><a href="#">Python</a></li>
+          <li><a href="#">Machine Learning</a></li>
+          <li><a href="#">Flask</a></li>
+          <li><a href="#">HTML & CSS</a></li>
+          <li><a href="#">Bootstrap</a></li>
+        </ul>
+      </div>
+
+      <!-- Project Info -->
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Project Info</h4>
+        <ul>
+          <li><a href="#">Asthma Prediction</a></li>
+          <li><a href="#">Healthcare AI</a></li>
+          <li><a href="#">Data Science</a></li>
+          <li><a href="#">Final Year Project</a></li>
+          <li><a href="#">ML Classification</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  {% endblock body %}
+
+  
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/vendor/php-email-form/validate.js"></script>
+  <script src="/static/vendor/aos/aos.js"></script>
+  <script src="/static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="/static/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="/static/js/main.js"></script>
+
+</body>
+
+</html>

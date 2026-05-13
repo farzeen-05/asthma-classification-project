@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block body %}
+
+<!-- Page Title -->
+<div class="page-title text-center py-5">
+  <h1>Asthma Prediction</h1>
+  <p>Enter patient details to predict asthma severity</p>
+</div>
+
+<!-- Prediction Form -->
+<section class="container py-5">
+
+  <form action="/predict" method="POST">
+
+    <div class="row">
+
+      <div class="col-md-4">
+        <input type="text" name="name" class="form-control" placeholder="Patient Name" required>
+      </div>
+
+      <div class="col-md-4">
+        <input type="number" name="age" class="form-control" placeholder="Age" required>
+      </div>
+
+      <div class="col-md-4">
+        <input type="number" name="bmi" class="form-control" placeholder="BMI" required>
+      </div>
+
+    </div>
+
+    <div class="row mt-3">
+
+      <div class="col-md-4">
+        <select name="smoking" class="form-select" required>
+          <option value="">Smoking Status</option>
+          <option value="0">Non-Smoker</option>
+          <option value="1">Smoker</option>
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <select name="allergy" class="form-select" required>
+          <option value="">Allergy</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <select name="breathing" class="form-select" required>
+          <option value="">Breathing Difficulty</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </select>
+      </div>
+
+    </div>
+
+    <div class="mt-4 text-center">
+      <button type="submit" class="btn btn-primary px-5 py-2">
+        Predict Asthma Level
+      </button>
+    </div>
+
+  </form>
+
+  <!-- RESULT -->
+  {% if prediction %}
+  <div class="alert alert-success text-center mt-4">
+    <h4>Result for {{ name }}</h4>
+    <p>{{ prediction }}</p>
+  </div>
+  {% endif %}
+
+</section>
+
+{% endblock %}
+ <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/vendor/php-email-form/validate.js"></script>
+  <script src="/static/vendor/aos/aos.js"></script>
+  <script src="/static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="/static/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="/static/js/main.js"></script>
+
+</body>
+
+</html>
