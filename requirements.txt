@@ -21,6 +21,7 @@ python-dateutil==2.9.0.post0
 scikit-learn==1.8.0
 scipy==1.17.1
 six==1.17.0
+gunicorn
 threadpoolctl==3.6.0
 tzdata==2026.1
 Werkzeug==3.1.8
